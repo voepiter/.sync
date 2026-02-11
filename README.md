@@ -1,18 +1,18 @@
-#.SYNC
+## .SYNC
 Simple syncronisation system for Linux
 machines - configs, preferences etc
 
 Usage:
 at your home directory
 
-* install apt packages
+copy repo to new host
 ```
 git clone git@github.com:voepiter/.sync.git
 ```
 
-first time repo initialisation
+install apt packages
 ``` 
-.sync/init
+.sync/install
 ```
 
 first time repo initialisation
