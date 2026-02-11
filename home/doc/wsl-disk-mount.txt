@@ -1,0 +1,29 @@
+#как починить поломанный диск Wsl 
+#запускаем powershell
+
+wsl --shutdown
+#ставим второй wsl distr
+wsl --install Ubuntu
+
+# Путь к вашему ext4.vhdx 
+$diskPath = "C:\Users\voe\AppData\Local\Packages\TheDebianProject.DebianGNULinux_...\LocalState\ext4.vhdx"
+
+#монтируем диск
+wsl --mount $diskPath --vhd --bare
+wsl -d Ubuntu
+
+# Найдите ваш диск (обычно /dev/sdb или /dev/sdc)
+lsblk
+# Создайте папку и смонтируйте
+sudo mkdir /mnt/fix
+sudo mount /dev/sdd /mnt/fix  # замените sdb на ваше устройство из lsblk без mount point
+
+cd /mnt/fix
+sudo ls -lahv .
+#исправляем косяки
+#sudo rm /mnt/fix/bin
+#sudo ln -s usr/bin bin
+
+#выходим из wsl ctrl+d \ exit
+wsl --unmount $diskPath
+wsl --shutdown 

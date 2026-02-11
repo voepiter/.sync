@@ -1,0 +1,284 @@
+context default
+    keyword : brightred
+    keyword . white/Orange
+    keyword > yellow
+    keyword < color223
+    keyword \+ color223
+    keyword - color223
+    keyword \* color223
+    keyword / color223
+    keyword % color223
+    keyword = color223
+    keyword != color223
+    keyword == color223
+    keyword { color153
+    keyword } color153
+    keyword ( color153
+    keyword ) color153
+    keyword [ color153
+    keyword ] color153
+    keyword , color153
+    keyword ; red
+    keyword whole self brightred
+    keyword whole and color223
+    keyword whole as color223
+    keyword whole assert color223
+    keyword whole async color223
+    keyword whole await color223
+    keyword whole break color223
+    keyword whole class color223
+    keyword whole continue color223
+    keyword whole def color223
+    keyword whole del color223
+    keyword whole elif color223
+    keyword whole else color223
+    keyword whole except color223
+    keyword whole exec color223
+    keyword whole finally color223
+    keyword whole for color223
+    keyword whole from color223
+    keyword whole global color223
+    keyword whole if color223
+    keyword whole import color223
+    keyword whole in color223
+    keyword whole is color223
+    keyword whole lambda color223
+    keyword whole nonlocal color223
+    keyword whole not color223
+    keyword whole or color223
+    keyword whole pass color223
+    keyword whole print color223
+    keyword whole raise color223
+    keyword whole return color223
+    keyword whole try color223
+    keyword whole while color223
+    keyword whole with color223
+    keyword whole yield color223
+
+    keyword whole abs color153
+    keyword whole all color153
+    keyword whole any color153
+    keyword whole basestring color153
+    keyword whole bin color153
+    keyword whole bool color153
+    keyword whole callable color153
+    keyword whole chr color153
+    keyword whole classmethod color153
+    keyword whole cmp color153
+    keyword whole coerce color153
+    keyword whole compile color153
+    keyword whole complex color153
+    keyword whole delattr color153
+    keyword whole dict color153
+    keyword whole dir color153
+    keyword whole divmod color153
+    keyword whole enumerate color153
+    keyword whole eval color153
+    keyword whole execfile color153
+    keyword whole file color153
+    keyword whole filter color153
+    keyword whole float color153
+    keyword whole frozenset color153
+    keyword whole getattr color153
+    keyword whole globals color153
+    keyword whole hasattr color153
+    keyword whole hash color153
+    keyword whole help color153
+    keyword whole hex color153
+    keyword whole id color153
+    keyword whole input color153
+    keyword whole int color153
+    keyword whole isinstance color153
+    keyword whole issubclass color153
+    keyword whole iter color153
+    keyword whole len color153
+    keyword whole list color153
+    keyword whole locals color153
+    keyword whole long color153
+    keyword whole map color153
+    keyword whole max color153
+    keyword whole min color153
+    keyword whole next color153
+    keyword whole object color153
+    keyword whole oct color153
+    keyword whole open color153
+    keyword whole ord color153
+    keyword whole pow color153
+    keyword whole print color153
+    keyword whole property color153
+    keyword whole range color153
+    keyword whole raw_input color153
+    keyword whole reduce color153
+    keyword whole reload color153
+    keyword whole repr color153
+    keyword whole reversed color153
+    keyword whole round color153
+    keyword whole setattr color153
+    keyword whole slice color153
+    keyword whole sorted color153
+    keyword whole staticmethod color153
+    keyword whole str color153
+    keyword whole sum color153
+    keyword whole super color153
+    keyword whole tuple color153
+    keyword whole type color153
+    keyword whole unichr color153
+    keyword whole unicode color153
+    keyword whole vars color153
+    keyword whole xrange color153
+    keyword whole zip color153
+
+    keyword whole atof color141
+    keyword whole atoi color141
+    keyword whole atol color141
+    keyword whole expandtabs color141
+    keyword whole find color141
+    keyword whole rfind color141
+    keyword whole index color141
+    keyword whole rindex color141
+    keyword whole count color141
+    keyword whole split color141
+    keyword whole splitfields color141
+    keyword whole join color141
+    keyword whole joinfields color141
+    keyword whole strip color141
+    keyword whole lstrip color141
+    keyword whole rstrip color141
+    keyword whole swapcase color141
+    keyword whole upper color141
+    keyword whole lower color141
+    keyword whole ljust color141
+    keyword whole rjust color141
+    keyword whole center color141
+    keyword whole zfill color141
+
+    keyword whole __init__ lightgray
+    keyword whole __del__ lightgray
+    keyword whole __repr__ lightgray
+    keyword whole __str__ lightgray
+    keyword whole __cmp__ lightgray
+    keyword whole __hash__ lightgray
+    keyword whole __call__ lightgray
+    keyword whole __getattr__ lightgray
+    keyword whole __setattr__ lightgray
+    keyword whole __delattr__ lightgray
+    keyword whole __len__ lightgray
+    keyword whole __getitem__ lightgray
+    keyword whole __setitem__ lightgray
+    keyword whole __delitem__ lightgray
+    keyword whole __getslice__ lightgray
+    keyword whole __setslice__ lightgray
+    keyword whole __delslice__ lightgray
+    keyword whole __add__ lightgray
+    keyword whole __sub__ lightgray
+    keyword whole __mul__ lightgray
+    keyword whole __div__ lightgray
+    keyword whole __mod__ lightgray
+    keyword whole __divmod__ lightgray
+    keyword whole __pow__ lightgray
+    keyword whole __lshift__ lightgray
+    keyword whole __rshift__ lightgray
+    keyword whole __and__ lightgray
+    keyword whole __xor__ lightgray
+    keyword whole __or__ lightgray
+    keyword whole __neg__ lightgray
+    keyword whole __pos__ lightgray
+    keyword whole __abs__ lightgray
+    keyword whole __invert__ lightgray
+    keyword whole __nonzero__ lightgray
+    keyword whole __coerce__ lightgray
+    keyword whole __int__ lightgray
+    keyword whole __long__ lightgray
+    keyword whole __float__ lightgray
+    keyword whole __oct__ lightgray
+    keyword whole __hex__ lightgray
+
+    keyword whole __radd__ lightgray
+    keyword whole __rsub__ lightgray
+    keyword whole __rmul__ lightgray
+    keyword whole __rdiv__ lightgray
+    keyword whole __rmod__ lightgray
+    keyword whole __rdivmod__ lightgray
+    keyword whole __rpow__ lightgray
+    keyword whole __rlshift__ lightgray
+    keyword whole __rrshift__ lightgray
+    keyword whole __rand__ lightgray
+    keyword whole __rxor__ lightgray
+    keyword whole __ror__ lightgray
+
+    keyword whole __+__ brightred
+
+context """ """ color114
+    keyword \\" color213
+    keyword \\\n color213
+    keyword %% color213
+    keyword %\[#0\s-\+,\]\[0123456789\]\[.\]\[0123456789\]\[L\]\{eEfgGoxX\} color213
+    keyword %\[0\s-\+,\]\[0123456789\]\[.\]\[0123456789\]\[hl\]\{diu\} color213
+    keyword %\[hl\]n color213
+    keyword %\[.\]\[0123456789\]s color213
+    keyword %[*] color213
+    keyword %c color213
+    keyword \\\{0123\}\{01234567\}\{01234567\} color213
+    keyword \\\\{01234567\}\{01234567\} color213
+    keyword \\\\{01234567\} color213
+    keyword \\\\ color213
+    keyword \\' color213
+    keyword \\\{abtnvfr\} color213
+
+context ''' ''' color114
+    keyword \\" color213
+    keyword \\\n color213
+    keyword %% color213
+    keyword %\[#0\s-\+,\]\[0123456789\]\[.\]\[0123456789\]\[L\]\{eEfgGoxX\} color213
+    keyword %\[0\s-\+,\]\[0123456789\]\[.\]\[0123456789\]\[hl\]\{diu\} color213
+    keyword %\[hl\]n color213
+    keyword %\[.\]\[0123456789\]s color213
+    keyword %[*] color213
+    keyword %c color213
+    keyword \\\{0123\}\{01234567\}\{01234567\} color213
+    keyword \OD\\\{01234567\}\{01234567\} color213
+    keyword \\\\{01234567\} color213
+    keyword \\\\ color213
+    keyword \\' color213
+    keyword \\\{abtnvfr\} color213
+
+context # \n gray
+    keyword coding\{=:\}\[\s\]\[-0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz\] brightOAmagenta
+    keyword vim:fileencoding=\[-0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz\] brightmagenta
+    keyword -\*-\[\s\]coding:\[\s\]\[-0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz\]\[\s\]-\*- brightmagenta
+    spellcheck
+
+context " " color114
+    keyword {*} color154
+    keyword :*} color147
+    keyword ; color65
+
+
+    keyword \\" color213
+    keyword %% color213
+    keyword %\[#0\s-\+,\]\[0123456789\]\[.\]\[0123456789\]\[L\]\{eEfgGoxX\} color213
+    keyword %\[0\s-\+,\]\[0123456789\]\[.\]\[0123456789\]\[hl\]\{diuxX\} color213
+    keyword %\[hl\]n color213
+    keyword %\[.\]\[0123456789\]s color213
+    keyword %[*] color213
+    keyword %c color213
+    keyword \\\{0123\}\{01234567\}\{01234567\} color213
+    keyword \\\\ color213
+    keyword \\' color213
+    keyword \\\{abtnvfr\} color213
+
+context ' ' color114
+
+    keyword \\" color213
+    keyword \\\n color213
+    keyword %% color213
+    keyword %\[#0\s-\+,\]\[0123456789\]\[.\]\[0123456789\]\[L\]\{eEfgGoxX\} color213
+    keyword %\[0\s-\+,\]\[0123456789\]\[.\]\[0123456789\]\[hl\]\{diuxX\} color213
+    keyword %\[hl\]n color213
+    keyword %\[.\]\[0123456789\]s color213
+    keyword %[*] color213
+    keyword %c color213
+    keyword \\\{0123\}\{01234567\}\{01234567\} color213
+    keyword \\\\ color213
+    keyword \\' color213
+    keyword \\\{abtnvfr\} color213

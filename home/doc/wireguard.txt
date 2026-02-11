@@ -1,0 +1,11 @@
+#wireguard install script
+curl -O https://raw.githubusercontent.com/angristan/wireguard-install/master/wireguard-install.sh
+chmod +x wireguard-install.sh
+./wireguard-install.sh
+
+#settings
+e /etc/wireguard/params
+e /etc/wireguard/wg0.conf
+
+#qr code
+qrencode -t ansiutf8 < wg0-client-natasha.conf

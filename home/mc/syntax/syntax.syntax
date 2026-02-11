@@ -1,0 +1,322 @@
+# Syntax highlighting rules for syntax highlightaing rules
+
+# Use \[\] at the end of keywords to suppress their special meaning
+
+
+wholechars abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_.\\[]{}
+
+context default
+
+    #include color.syntax
+
+    keyword whole black black gray
+    keyword whole red red
+    keyword whole green green
+    keyword whole brown brown
+    keyword whole blue blue
+    keyword whole magenta magenta
+    keyword whole cyan cyan
+    keyword whole lightgray lightgray
+    keyword whole gray gray
+    keyword whole brightred brightred
+    keyword whole brightgreen brightgreen
+    keyword whole yellow yellow
+    keyword whole brightblue brightblue
+    keyword whole brightmagenta brightmagenta
+    keyword whole brightcyan brightcyan
+    keyword whole white white
+
+    keyword whole color1 color1
+    keyword whole color2 color2
+    keyword whole color3 color3
+    keyword whole color4 color4
+    keyword whole color5 color5
+    keyword whole color6 color6
+    keyword whole color7 color7
+    keyword whole color8 color8
+    keyword whole color9 color9
+    keyword whole color10 color10
+    keyword whole color11 color11
+    keyword whole color12 color12
+    keyword whole color13 color13
+    keyword whole color14 color14
+    keyword whole color15 color15
+    keyword whole color16 color16
+    keyword whole color17 color17
+    keyword whole color18 color18
+    keyword whole color19 color19
+    keyword whole color20 color20
+    keyword whole color21 color21
+    keyword whole color22 color22
+    keyword whole color23 color23
+    keyword whole color24 color24
+    keyword whole color25 color25
+    keyword whole color26 color26
+    keyword whole color27 color27
+    keyword whole color28 color28
+    keyword whole color29 color29
+    keyword whole color30 color30
+    keyword whole color31 color31
+    keyword whole color32 color32
+    keyword whole color33 color33
+    keyword whole color34 color34
+    keyword whole color35 color35
+    keyword whole color36 color36
+    keyword whole color37 color37
+    keyword whole color38 color38
+    keyword whole color39 color39
+    keyword whole color40 color40
+    keyword whole color41 color41
+    keyword whole color42 color42
+    keyword whole color43 color43
+    keyword whole color44 color44
+    keyword whole color45 color45
+    keyword whole color46 color46
+    keyword whole color47 color47
+    keyword whole color48 color48
+    keyword whole color49 color49
+    keyword whole color50 color50
+    keyword whole color51 color51
+    keyword whole color52 color52
+    keyword whole color53 color53
+    keyword whole color54 color54
+    keyword whole color55 color55
+    keyword whole color56 color56
+    keyword whole color57 color57
+    keyword whole color58 color58
+    keyword whole color59 color59
+    keyword whole color60 color60
+    keyword whole color61 color61
+    keyword whole color62 color62
+    keyword whole color63 color63
+    keyword whole color64 color64
+    keyword whole color65 color65
+    keyword whole color66 color66
+    keyword whole color67 color67
+    keyword whole color68 color68
+    keyword whole color69 color69
+    keyword whole color70 color70
+    keyword whole color71 color71
+    keyword whole color72 color72
+    keyword whole color73 color73
+    keyword whole color74 color74
+    keyword whole color75 color75
+    keyword whole color76 color76
+    keyword whole color77 color77
+    keyword whole color78 color78
+    keyword whole color79 color79
+    keyword whole color80 color80
+    keyword whole color81 color81
+    keyword whole color82 color82
+    keyword whole color83 color83
+    keyword whole color84 color84
+    keyword whole color85 color85
+    keyword whole color86 color86
+    keyword whole color87 color87
+    keyword whole color88 color88
+    keyword whole color89 color89
+    keyword whole color90 color90
+    keyword whole color91 color91
+    keyword whole color92 color92
+    keyword whole color93 color93
+    keyword whole color94 color94
+    keyword whole color95 color95
+    keyword whole color96 color96
+    keyword whole color97 color97
+    keyword whole color98 color98
+    keyword whole color99 color99
+    keyword whole color100 color100
+    keyword whole color101 color101
+    keyword whole color102 color102
+    keyword whole color103 color103
+    keyword whole color104 color104
+    keyword whole color105 color105
+    keyword whole color106 color106
+    keyword whole color107 color107
+    keyword whole color108 color108
+    keyword whole color109 color109
+    keyword whole color110 color110
+    keyword whole color111 color111
+    keyword whole color112 color112
+    keyword whole color113 color113
+    keyword whole color114 color114
+    keyword whole color115 color115
+    keyword whole color116 color116
+    keyword whole color117 color117
+    keyword whole color118 color118
+    keyword whole color119 color119
+    keyword whole color120 color120
+    keyword whole color121 color121
+    keyword whole color122 color122
+    keyword whole color123 color123
+    keyword whole color124 color124
+    keyword whole color125 color125
+    keyword whole color126 color126
+    keyword whole color127 color127
+    keyword whole color128 color128
+    keyword whole color129 color129
+    keyword whole color130 color130
+    keyword whole color131 color131
+    keyword whole color132 color132
+    keyword whole color133 color133
+    keyword whole color134 color134
+    keyword whole color135 color135
+    keyword whole color136 color136
+    keyword whole color137 color137
+    keyword whole color138 color138
+    keyword whole color139 color139
+    keyword whole color140 color140
+    keyword whole color141 color141
+    keyword whole color142 color142
+    keyword whole color143 color143
+    keyword whole color144 color144
+    keyword whole color145 color145
+    keyword whole color146 color146
+    keyword whole color147 color147
+    keyword whole color148 color148
+    keyword whole color149 color149
+    keyword whole color150 color150
+    keyword whole color151 color151
+    keyword whole color152 color152
+    keyword whole color153 color153
+    keyword whole color154 color154
+    keyword whole color155 color155
+    keyword whole color156 color156
+    keyword whole color157 color157
+    keyword whole color158 color158
+    keyword whole color159 color159
+    keyword whole color160 color160
+    keyword whole color161 color161
+    keyword whole color162 color162
+    keyword whole color163 color163
+    keyword whole color164 color164
+    keyword whole color165 color165
+    keyword whole color166 color166
+    keyword whole color167 color167
+    keyword whole color168 color168
+    keyword whole color169 color169
+    keyword whole color170 color170
+    keyword whole color171 color171
+    keyword whole color172 color172
+    keyword whole color173 color173
+    keyword whole color174 color174
+    keyword whole color175 color175
+    keyword whole color176 color176
+    keyword whole color177 color177
+    keyword whole color178 color178
+    keyword whole color179 color179
+    keyword whole color180 color180
+    keyword whole color181 color181
+    keyword whole color182 color182
+    keyword whole color183 color183
+    keyword whole color184 color184
+    keyword whole color185 color185
+    keyword whole color186 color186
+    keyword whole color187 color187
+    keyword whole color188 color188
+    keyword whole color189 color189
+    keyword whole color190 color190
+    keyword whole color191 color191
+    keyword whole color192 color192
+    keyword whole color193 color193
+    keyword whole color194 color194
+    keyword whole color195 color195
+    keyword whole color196 color196
+    keyword whole color197 color197
+    keyword whole color198 color198
+    keyword whole color199 color199
+    keyword whole color200 color200
+    keyword whole color201 color201
+    keyword whole color202 color202
+    keyword whole color203 color203
+    keyword whole color204 color204
+    keyword whole color205 color205
+    keyword whole color206 color206
+    keyword whole color207 color207
+    keyword whole color208 color208
+    keyword whole color209 color209
+    keyword whole color210 color210
+    keyword whole color211 color211
+    keyword whole color212 color212
+    keyword whole color213 color213
+    keyword whole color214 color214
+    keyword whole color215 color215
+    keyword whole color216 color216
+    keyword whole color217 color217
+    keyword whole color218 color218
+    keyword whole color219 color219
+    keyword whole color220 color220
+    keyword whole color221 color221
+    keyword whole color222 color222
+    keyword whole color223 color223
+    keyword whole color224 color224
+    keyword whole color225 color225
+    keyword whole color226 color226
+    keyword whole color227 color227
+    keyword whole color228 color228
+    keyword whole color229 color229
+    keyword whole color230 color230
+    keyword whole color231 color231
+    keyword whole color232 color232
+    keyword whole color233 color233
+    keyword whole color234 color234
+    keyword whole color235 color235
+    keyword whole color236 color236
+    keyword whole color237 color237
+    keyword whole color238 color238
+    keyword whole color239 color239
+    keyword whole color240 color240
+    keyword whole color241 color241
+    keyword whole color242 color242
+    keyword whole color243 color243
+    keyword whole color244 color244
+    keyword whole color245 color245
+    keyword whole color246 color246
+    keyword whole color247 color247
+    keyword whole color248 color248
+    keyword whole color249 color249
+    keyword whole color250 color250
+    keyword whole color251 color251
+    keyword whole color252 color252
+    keyword whole color253 color253
+    keyword whole color254 color254
+    keyword whole color255 color255
+
+
+# Invalid combinations, not highlighted
+    keyword whole linestart\[\t\s\]whole
+    keyword whole linestart\[\t\s\]wholeleft
+    keyword whole linestart\[\t\s\]wholeright
+
+# Combinations below are valid
+    keyword whole whole\[\t\s\]linestart color114
+    keyword whole wholeleft\[\t\s\]linestart color114
+    keyword whole wholeright\[\t\s\]linestart color114
+    keyword whole whole\[\] color114
+    keyword whole wholeleft\[\] color114
+    keyword whole wholeright\[\] color114
+    keyword whole linestart\[\] color114
+
+    keyword whole wholechars\[\t\s\]left color114
+    keyword whole wholechars\[\t\s\]right color114
+    keyword whole wholechars\[\] color114
+    keyword whole define\[\] color114
+
+    keyword whole spellcheck\[\] color223
+    keyword whole keyword\[\] color223
+    keyword whole context\[\t\s\]exclusive color219
+    keyword whole context\[\t\s\]default color219
+    keyword whole context\[\] color219
+    keyword whole caseinsensitive\[\] color219
+
+    keyword whole linestart file\[\] color153
+    keyword whole linestart include\[\] color223
+
+
+context linestart # \n gray
+    spellcheck
+
+# Ideally we would have defined comments with "context linestart \[\s\]# ...",
+# but contexts can't start with a character class. So we define comments twice.
+context linestart \s\[\s\]# \n gray
+    spellcheck

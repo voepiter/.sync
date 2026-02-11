@@ -1,0 +1,29 @@
+#!/bin/bash
+DEST="$HOME/.sync"
+
+mkdir -p "$DEST/home" 
+# Домашние конфиги (копируем только нужное, без кэша .git итд )
+rsync -av --exclude='.cache' --exclude='.git' --exclude='.zsh_history' --exclude='uv' --exclude='python' \
+    ~/.bashrc ~/.dircolors ~/.zshrc ~/.config ~/doc ~/.local/share/mc \
+    "$DEST/home"
+
+mkdir -p "$DEST/etc"
+# wsl конфиги
+cp /etc/wsl.conf "$DEST/etc/"
+
+# зеркало repo
+mkdir -p "$DEST/etc/apt"
+cp /etc/apt/sources.list "$DEST/etc/apt"
+
+# vps
+#cp -r /etc/iptables "$DEST/etc"
+#cp -r /etc/fail2ban "$DEST/etc"
+
+
+# Синхронизация
+cd "$DEST"
+git add .
+git commit -m "sync $(hostname) $(date +%y.%m.%d %H:%M)"
+git push origin main
+
+

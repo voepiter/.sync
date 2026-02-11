@@ -1,0 +1,187 @@
+[panel-brief-cols-input]
+0=2
+
+[mc.esc.timeout]
+0=1000000
+
+[mini_input]
+0=half type name | size | perm
+1=
+
+[input-def]
+0=*
+
+[inpmc.fm.mkdir]
+0=fail2ban
+1=jail.d
+2=filter.d
+3=ai
+
+[inp:fishlink_cmd: Shell link to machine ]
+0=hv1
+
+[user-fmt-input]
+0=half typr name | size:4 | perm
+1=half type name | size | perm
+2=half type name | size:4 | perm
+3=half type name | size:4 | mtime
+4=half type name | size:4 | mtime:full
+5=half type name | size | year
+6=half type name | bsize:4 | year mtime
+7=half type name | bsize:4 | mtime
+8=half 2 name bsize:4 | mtime
+9=half 2 name bsize:4 
+10=half name | bsize:4 | mtime
+11=half name bsize:4 mtime
+12=half type name bsize:4 space mtime
+13=half 2 name bsize:4 space mtime
+14=half name bsize:4 space mtime
+
+[replace]
+0=token_in
+1=token_out
+2=NOCOLOR
+3=forecolor
+4=forecolor(
+5=resetcolor
+6=color225
+7=color214
+8=color223
+9=color153
+10=color141
+11=color193
+12=color213
+13=keyword
+
+[cmdline]
+0=`
+1=cd /mnt/c
+2=[21~
+3=25M
+4=chmod +x *.exe
+5=
+
+[save-as]
+0=/etc/systemd/system/xray.service
+1=/usr/local/etc/xray/config.json
+2=/usr/share/mc/skins/voe256.ini
+3=sync
+4=sync.host
+5=/home/voe/.local/share/mc/syntax/markdown.syntax
+6=/home/voe/.local/share/mc/syntax/markdown.syntax.bak
+7=/etc/wsl.conf
+8=
+9=123.txt
+
+[mc.shared.search]
+0=Chrome
+1=Useragent
+2=agent
+3=user_agent
+4=MSIE
+5=in_token
+6=out_token
+7=RESET
+8=gemini ap
+9=undo
+10=ctrl-z
+11=ctrl-c
+12=ctrl-v
+13=color
+14=color(
+15=NOCOLOR
+16=color214
+17=if
+18=color225
+19=yellow
+20=brightcyan
+21=magenta
+22=brightgreen
+23=color193
+24=home
+25=elag
+26=aaaaa
+27=^aaaaa
+28=vladimir
+29=context
+30=.py
+31=clip
+32=ctrl-in
+33=ip
+34=r220
+35=ssh-
+36=edit
+37=shift-ins
+38=conf
+39=du
+
+[input2]
+0=/home/voe/src/
+1=/home/voe/code/ai/
+2=ai.py
+3=/home/voe/code/
+4=/home/voe/doc/xray/
+5=/home/voe/doc/
+6=/home/voe/
+7=/home/voe/bin/
+8=Administrator.ccache
+9=mltlvl.ccache
+10=/root/.config/
+11=/root/.sync/home/.config/zsh
+12=/root/.config/zsh
+13=/root/.config
+
+[Dir Hist New Right Panel]
+0=/home/voe/.local/bin
+1=/home/voe/.config/uv
+2=/root
+3=/home/voe/.config/mc/mcedit
+4=/home/voe/.config/mc
+5=/home/voe/.local/state
+6=/home/voe/.local/share/mc
+7=/home/voe/.local/share
+8=/home/voe/.local
+9=/
+10=/home/voe/.config/zsh/powerlevel10k
+11=/home/voe/.config/zsh/zsh-autosuggestions
+12=/home/voe/.config/zsh
+13=/home
+14=/home/voe/.config/bashtop
+15=/home/voe/.config/btop
+16=/home/voe
+17=/home/voe/.config/tmux
+18=/home/voe/.config
+
+[Dir Hist New Left Panel]
+0=/root/.local/bin
+1=/root/.config/zsh/powerlevel10k
+2=/root/.local/share/mc/syntax
+3=/root/.local/share/mc/skins
+4=/root/.local/share/mc
+5=/root/.local/share
+6=/root/.local
+7=/root/.sync/wsl
+8=/root/.sync/home/.config/zsh/zsh-syntax-highlighting
+9=/root/.sync/home/.config/zsh/zsh-autosuggestions
+10=/root/.sync/home/.config/zsh/powerlevel10k
+11=/
+12=/root/.config/zsh/zsh-syntax-highlighting
+13=/root/.config/zsh/zsh-autosuggestions
+14=/root/.sync
+15=/root/.sync/home/.config/zsh
+16=/root/.sync/home/.config/tmux
+17=/root/.sync/home/.config/procps
+18=/root/.sync/home/.config/mc
+19=/root/.sync/home/.config/lftp
+20=/root/.sync/home/.config/far2l/REG
+21=/root/.sync/home/.config/far2l/plugins
+22=/root/.sync/home/.config/far2l
+23=/root/.sync/home/.config/bashtop
+24=/root/.sync/home/.config
+25=/root/.sync/home
+26=/root/.config/bashtop
+27=/root/.config/procps
+28=/root/.config/tmux
+29=/root/.config/zsh
+30=/root/.config
+31=/root

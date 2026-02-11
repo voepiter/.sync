@@ -1,0 +1,14 @@
+#!/bin/bash
+DEST="$HOME/.sync"
+
+#cd $HOME
+# Тянем изменения
+git pull
+
+# Раскладываем по местам
+rsync -av "$DEST/home/" "$HOME"
+cp "$DEST/etc/wsl.conf" /etc/
+cp "$DEST/etc/apt/sources.list" /etc/apt
+
+#cp "$DEST/etc/iptables" /etc
+#cp "$DEST/etc/fail2ban" /etc

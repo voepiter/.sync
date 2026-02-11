@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+apt update && apt upgrade
+apt install -y 	ssh curl rsync zsh git mc tmux \
+		dnsutils whois fastfetch bashtop elinks \
+		grc

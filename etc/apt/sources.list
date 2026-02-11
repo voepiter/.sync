@@ -1,0 +1,4 @@
+deb http://mirror.yandex.ru/debian trixie main
+deb http://mirror.yandex.ru/debian trixie-updates main
+deb http://mirror.yandex.ru/debian-security trixie-security main
+#deb http://ftp.debian.org/debian trixie-backports main                

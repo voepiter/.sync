@@ -1,0 +1,17 @@
+bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh)" @ install
+
+xray uuid
+386bef5c-195c-4edd-a2fe-b5ba8b9ec311
+
+xray x25519
+Private key: QIOo0K8xyR_6Rr1N51Gbqt6U5VHQ97qLOgnnCxPAF2c
+Public key: ttc46JWLdcEXP_WjNIaXCwWrtWRW2gjC71kRfftnmlc
+
+openssl rand -hex 8
+39f0fecb4fd00273
+
+e /usr/local/etc/xray/config.json
+
+systemctl restart xray
+
+qrencode -t ansiutf8 "vless://386bef5c-195c-4edd-a2fe-b5ba8b9ec311@31.56.48.121:443?type=tcp&security=reality&pbk=ttc46JWLdcEXP_WjNIaXCwWrtWRW2gjC71kRfftnmlc&fp=chrome&sni=hostvds.com&sid=39f0fecb4fd00273&flow=xtls-rprx-vision#vps1.hostvds"

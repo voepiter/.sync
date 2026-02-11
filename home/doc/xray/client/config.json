@@ -1,0 +1,64 @@
+{
+  "log": {
+      "loglevel": "none"
+  },
+  "inbounds": [
+      {
+          "port": 1080,
+          "protocol": "socks",
+          "settings": {
+              "auth": "noauth",
+              "udp": true
+          }
+      },
+      {
+          "port": 1081,
+          "protocol": "http"
+      }
+  ],
+  "outbounds": [
+//    {
+//          "protocol": "vless",
+//          "settings": {
+//              "vnext": [
+//                  {
+////                      "address": "185.92.181.193",
+//                      "address": "31.56.48.121",
+//                      "port": 443,
+//                      "users": [
+//                          {
+//                              "id": "386bef5c-195c-4edd-a2fe-b5ba8b9ec311",
+//                              "flow": "xtls-rprx-vision",
+//                              "encryption": "none"
+//                          }
+//                          ]
+//                  }
+//              ]
+//          },
+//          "streamSettings": {
+//              "network": "tcp",
+//              "security": "reality",
+//              "realitySettings": {
+//                  "serverName": "github.com",
+//                  "publicKey": "ttc46JWLdcEXP_WjNIaXCwWrtWRW2gjC71kRfftnmlc",
+//                  "shortId": "39f0fecb4fd00273",
+//                  "fingerprint": "chrome"
+//              }
+//          }
+//      }
+     {
+       "protocol": "shadowsocks",
+       "settings": {
+         "servers": [
+           {
+             "address": "31.56.48.121",
+             "port": 48099,
+             "method": "chacha20-ietf-poly1305",
+             "password": "JGc9wimHND8NYmalaZqXfLG2KaIstYtCTjXNojTIm6o="
+           }
+         ]
+       }
+     }
+
+  ]
+}

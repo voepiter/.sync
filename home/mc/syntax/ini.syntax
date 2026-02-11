@@ -1,0 +1,26 @@
+# DOS / Windows INI files
+
+context default color223
+    keyword { cyan
+    keyword } cyan
+
+    keyword | red
+    keyword = brightred
+
+
+context " " color157
+context ' ' color156
+
+# groups
+context [ ] yellow
+
+# comments:
+context # \n lightray
+    spellcheck
+
+context ; \n lightgray
+    spellcheck
+
+context exclusive = \n brightcyan
+
+

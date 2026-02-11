@@ -1,0 +1,66 @@
+{
+  "log": {
+    "loglevel": "none"
+  },
+  "inbounds": [
+    {
+      "port": 443,
+      "protocol": "vless",
+      "settings": {
+        "clients": [
+          {
+            "id": "386bef5c-195c-4edd-a2fe-b5ba8b9ec311",
+            "email": "user@myserver",
+            "flow": "xtls-rprx-vision"
+          }
+        ],
+        "decryption": "none"
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+            "show": false,
+            "dest": "hostvds.com:443",
+            "xver": 0,
+            "serverNames": [
+                "hostvds.com"
+            ],
+            "privateKey": "QIOo0K8xyR_6Rr1N51Gbqt6U5VHQ97qLOgnnCxPAF2c",
+            "shortIds": [
+                "39f0fecb4fd00273"
+            ]
+        }
+      }
+    }
+
+  ],
+
+"outbounds": [
+    {
+      "protocol": "freedom",
+      "tag": "direct"
+    },
+    {
+      "protocol": "blackhole",
+      "tag": "blocked"
+    }
+  ],
+  "routing": {
+    "domainStrategy": "IPIfNonMatch",
+    "rules": [
+      {
+        "type": "field",
+          "ip": [ "geoip:RU" , "geoip:CN"],
+        "outboundTag": "blocked"
+      },
+      {
+        "type": "field",
+        "ip": ["geoip:private"],
+        "outboundTag": "blocked"
+      }
+    ]
+  }
+
+
+}
