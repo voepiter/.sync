@@ -27,6 +27,6 @@ cp ~/.rtorrent.rc "$DEST/home"
 cd "$DEST"
 git add .
 git commit -m "sync $(hostname) $(date +'%y.%m.%d %H:%M')"
-git push origin main
+git push origin main --quiet
 
 
