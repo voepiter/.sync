@@ -19,4 +19,4 @@ ZSH_HIGHLIGHT_STYLES[dollar-double-quoted-argument]='fg=92'
 ZSH_HIGHLIGHT_STYLES[variablec]='fg=92'
 
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
-ZSH_HIGHLIGHT_PATTERNS+=('rm -rf' 'fg=white,bg=88')
+ZSH_HIGHLIGHT_PATTERNS+=('-rf' 'fg=white,bg=88')

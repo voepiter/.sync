@@ -59,21 +59,20 @@ if [ -n "$BASH_VERSION" ]; then
     bind '"\e[1;2B": end-of-line'        # Shift+Down
 fi
 
-# добавляем ssh ключи в агент 
+#ssh ключи
 export SSH_AUTH_SOCK="$HOME/.ssh/agent.sock"
-if [ -z "$SSH_CONNECTION" ] && [ -z "$SSH_TTY" ]; then
-    # Запускаем агент если не запущен
-    if ! \ss -a | grep -q "$SSH_AUTH_SOCK"; then
-        rm -f "$SSH_AUTH_SOCK"
+if [ -z "$SSH_CONNECTION" ]; then
+    # Запуск агента, если сокет не живой
+    if [ ! -S "$SSH_AUTH_SOCK" ]; then
+        \rm -f "$SSH_AUTH_SOCK"
 	ssh-agent -a "$SSH_AUTH_SOCK" > /dev/null
     fi
-
-    # проверяем ключ в агенте добавляем если нет
-    ssh-add -l | grep SHA || ssh-add -t 24h
+    # ssh-add только если агент пуст 
+    ssh-add -l >/dev/null 2>&1 || ssh-add -t 24h &>/dev/null
+    # прибиваем лишний процесс от ssh-add
+    #pkill -t pts/1
 fi
 
 #LLM api keys
 [[ -f ~/.api.keys ]] && source ~/.api.keys
-
-#[[ -f ~/.profile ]] && export PATH="$HOME/.local/bin:$PATH"
 

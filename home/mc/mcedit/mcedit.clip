@@ -1,2 +1,1 @@
-# зеркало repo
-cp /etc/apt/sources.list "$DEST/etc/apt"
+    StrictHostKeyChecking accept-new
