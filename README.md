@@ -1,7 +1,9 @@
 ## .SYNC
 
->Linux work enviroment sync
->apt packages,configs, etc
+>Linux work enviroment sync with
+>essential apt packages,configs, etc
+>helps when you work on multiple hosts 
+>including WSL, vps, termux ...  
 
 ### Features
 
