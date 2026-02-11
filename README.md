@@ -1,16 +1,17 @@
 ## .SYNC
 
->simple syncronisation system for Linux
->machines - packages,configs, etc
+>Linux work enviroment sync
+>apt packages,configs, etc
 
 ### Features
-*ssh keys agent  
-*Bash optimal profile
-*Zsh with autocomlete highlight plugins and powerlevel10k theme
-*Tmux optimal config
-*Midnight Commander and Far manager with colorizers
-*WSL optimisation
-*Fail2Ban 
+
+- ssh keys agent for passwordless work  
+- Bash optimal profile
+- Zsh with cool Powerleve10k theme and autocomlete highlight plugins
+- Tmux optimal config with save plugin
+- Midnight Commander and Far manager with Dark theme and optimal syntax
+- WSL optimisation
+- Fail2Ban 
  
 ### Installation
 
