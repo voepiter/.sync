@@ -4,13 +4,13 @@
 >machines - packages,configs, etc
 
 ### Features
-ssh keys agent  
-Bash optimal profile
-Zsh with autocomlete highlight plugins and powerlevel10k theme
-Tmux optimal config
-Midnight Commander and Far manager with colorizers
-WSL optimisation
-Fail2Ban 
+*ssh keys agent  
+*Bash optimal profile
+*Zsh with autocomlete highlight plugins and powerlevel10k theme
+*Tmux optimal config
+*Midnight Commander and Far manager with colorizers
+*WSL optimisation
+*Fail2Ban 
  
 ### Installation
 
