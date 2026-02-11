@@ -1,4 +1,4 @@
->.SYNC
+#.SYNC
 Simple syncronisation system for Linux
 machines - configs, preferences etc
 
