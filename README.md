@@ -1,15 +1,16 @@
 ## .SYNC
 
 >Linux work enviroment sync with
->essential apt packages,configs, etc
->helps when you work on multiple hosts 
->including WSL, vps, termux ...  
+>essential apt packages,configs, etc.
+
+>Helps when you work on multiple hosts 
+>including WSL, vps servers, termux ...  
 
 ### Features
 
 - ssh keys agent for passwordless work  
 - Bash optimal profile
-- Zsh with cool Powerleve10k theme and autocomlete highlight plugins
+- Zsh with cool Powerlevel10k theme and autocomlete highlight plugins
 - Tmux optimal config with save plugin
 - Midnight Commander and Far manager with Dark theme and optimal syntax
 - WSL optimisation
