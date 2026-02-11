@@ -1,0 +1,53 @@
+# folders check
+
+method.insert = cfg.basedir,  private|const|string, (cat,"~/rtorrent/")
+method.insert = cfg.download, private|const|string, (cat,(cfg.basedir),"dump/")
+method.insert = cfg.session,  private|const|string, (cat,(cfg.basedir),".session/")
+method.insert = cfg.watch,    private|const|string, (cat,(cfg.basedir),"")
+method.insert = cfg.logs,     private|const|string, (cat,(cfg.basedir),"log/")
+method.insert = cfg.logfile,  private|const|string, (cat,(cfg.logs),"rtorrent-",(system.time),".log")
+
+# create if not found
+execute.throw = sh, -c, (cat, \
+ "mkdir -p \"",(cfg.download),"\" \"",(cfg.session),"\" \"",(cfg.watch),"\" \"",(cfg.logs),"\"")
+
+# basic network settings
+network.port_range.set = 50000-50000
+network.port_random.set = no
+throttle.global_down.max_rate.set_kb = 9000
+throttle.global_up.max_rate.set_kb   = 64
+
+session.path.set = (cat,(cfg.session))
+directory.default.set = (cat,(cfg.download))
+system.umask.set = 0027
+encoding.add = UTF-8
+system.cwd.set = (directory.default)
+protocol.encryption.set = allow_incoming,try_outgoing,enable_retry
+
+# auto add torrents from basedir
+schedule2 = watch_start, 10, 10, ((load.start_verbose, (cat,(cfg.basedir),"*.torrent")))
+#method.set_key = event.download.finished,delete_torrent_file,"execute=rm,-rf,(cat,$d.get_tied_to_file=)"
+#method.set_key = event.download.finished,delete_complete,"execute=rm,-rf,$d.get_base_path="
+
+# session and logs
+schedule2 = session_save, 1200, 3600, ((session.save))
+log.open_file = "log", (cfg.logfile)
+log.add_output = "info", "log"
+
+# Colors: 0 = black 1 = red 2 = green 3 = yellow 4 = blue 5 = magenta 6 = cyan 7 = white
+
+ui.torrent_list.layout.set = "compact"
+ui.color.title.set="gray on black"
+ui.color.footer.set="gray on black"
+ui.color.focus.set = reverse
+ui.color.label.set = gray
+ui.color.info.set = "bright green"
+ui.color.alarm.set = "bright red"
+ui.color.complete.set = "bright cyan"
+ui.color.seeding.set = magenta
+ui.color.stopped.set = yellow
+ui.color.queued.set = gray
+ui.color.incomplete.set = red
+ui.color.leeching.set = green
+#ui.color.odd.set = dim
+#ui.color.even.set = gray
