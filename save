@@ -16,7 +16,7 @@ mkdir -p "$DEST/etc/apt"
 cp /etc/apt/sources.list "$DEST/etc/apt"
 
 #rtorrents
-cp .rtorrent.rc "$DEST/home"
+cp ~/.rtorrent.rc "$DEST/home"
 
 # vps
 #cp -r /etc/iptables "$DEST/etc"
