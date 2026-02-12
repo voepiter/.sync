@@ -2,10 +2,15 @@
 DEST="$HOME/.sync"
 
 mkdir -p "$DEST/home" 
+cd ~
+
 # Домашние конфиги (копируем только нужное, без кэша .git итд )
 rsync -av --exclude='.cache' --exclude='.git' --exclude='.zsh_history' --exclude='uv' --exclude='python' \
-    ~/.bashrc ~/.dircolors ~/.zshrc ~/.config ~/doc ~/.local/share/mc \
+    ~/.bashrc ~/.dircolors ~/.zshrc ~/.config ~/doc  \
     "$DEST/home"
+
+#mc syntax skins
+cp -r --parent .local/share/mc "$DEST/home"   
 
 mkdir -p "$DEST/etc"
 # wsl конфиги
@@ -16,7 +21,7 @@ mkdir -p "$DEST/etc/apt"
 cp /etc/apt/sources.list "$DEST/etc/apt"
 
 #rtorrents
-cp ~/.rtorrent.rc "$DEST/home"
+cp .rtorrent.rc "$DEST/home"
 
 # vps
 #cp -r /etc/iptables "$DEST/etc"
