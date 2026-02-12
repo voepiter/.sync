@@ -19,7 +19,9 @@ alias i='sudo apt -y install'
 alias g='grep --color=auto'
 alias du='grc du -h -d 1'
 alias diff='diff -U0'
+
 alias ss='ss -tulpn |awk '\''{split($7, a, "\""); print $1,a[2],$5}'\'''
+alias ps='ps -e -o pid,user,%cpu,rss,tty,stat,args --forest | g -v 'ps -e''
 
 unset LC_ALL
 
@@ -70,7 +72,7 @@ if [ -z "$SSH_CONNECTION" ]; then
     # ssh-add только если агент пуст 
     ssh-add -l >/dev/null 2>&1 || ssh-add -t 24h &>/dev/null
     # прибиваем лишний процесс от ssh-add
-    #pkill -t pts/1
+    pkill login
 fi
 
 #LLM api keys
