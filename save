@@ -11,22 +11,19 @@ rsync -av --exclude='.cache' --exclude='.git' --exclude='.zsh_history' --exclude
 
 #mc syntax skins
 cp -r --parent .local/share/mc "$DEST/home"   
+# rtorrents
+cp .rtorrent.rc "$DEST/home"
 
+#/etc
 mkdir -p "$DEST/etc"
 # wsl конфиги
 cp /etc/wsl.conf "$DEST/etc/"
-
-# зеркало repo
+# apt dist repo
 mkdir -p "$DEST/etc/apt"
 cp /etc/apt/sources.list "$DEST/etc/apt"
-
-#rtorrents
-cp .rtorrent.rc "$DEST/home"
-
 # vps
 #cp -r /etc/iptables "$DEST/etc"
 #cp -r /etc/fail2ban "$DEST/etc"
-
 
 # cинхронизация c git 
 cd "$DEST"
