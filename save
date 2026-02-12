@@ -6,7 +6,7 @@ cd ~
 
 # Домашние конфиги (копируем только нужное, без кэша .git итд )
 rsync -av --exclude='.cache' --exclude='.git' --exclude='.zsh_history' --exclude='uv' --exclude='python' \
-    ~/.bashrc ~/.dircolors ~/.zshrc ~/.config ~/doc  \
+    ~/.bashrc ~/.alias ~/.dircolors ~/.zshrc ~/.config ~/doc  \
     "$DEST/home"
 
 #mc syntax skins

@@ -251,6 +251,8 @@ EXEC 38;5;150
 .bashrc 00;90
 .zshrc 00;90
 .profile 00;90
+.alias 00;90
+
 .dircolors 00;90
 .profile 00;90
 .bash_history 00;90

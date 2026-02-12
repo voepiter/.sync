@@ -176,13 +176,13 @@
 44=/usr
 45=/usr/share/mc
 46=/usr/share
-47=/home/voe
-48=/home
-49=/proc
-50=/
-51=/root
-52=/root/.local
-53=/root/.local/bin
+47=/home
+48=/proc
+49=/
+50=/root
+51=/root/.local
+52=/root/.local/bin
+53=/home/voe
 
 [Dir Hist New Left Panel]
 0=/home/voe/.config/shell_gpt
